@@ -2,8 +2,9 @@ class Student():
 
     def __init__(self,name,marks):
         self.name = name
-        self.__marks = marks
+        self.__marks = marks #Private attribute
 
+    # Controlled using getters/setters
     def get_marks(self):
         return self.__marks
 
