@@ -1,3 +1,6 @@
+from abc import abstractmethod
+
+
 class Car():
 
     def __init__(self):
@@ -12,3 +15,10 @@ class Car():
 
 c1 = Car()
 c1.start()
+
+# Abstract Class (Blueprint)
+class Vehicle():
+
+    @abstractmethod
+    def start_engine(self):
+        pass
