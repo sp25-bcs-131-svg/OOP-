@@ -1,0 +1,24 @@
+class Car():
+
+    color = "black"
+
+    @staticmethod
+    def start():
+        print("car started")
+
+    @staticmethod
+    def stop():
+        print("car stopped")
+
+class Suzuki(Car):
+
+    def __init__(self,name):
+        super().__init__()
+        self.name = name
+
+c1 = Suzuki("Alto")
+c2 = Car()
+
+print(c2.color)
+print(c1.color)
+c1.start()
