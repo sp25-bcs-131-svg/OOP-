@@ -38,6 +38,44 @@ c3 = Alto("VXR")
 print(c3.brand)
 print(c3.color)
 print(c3.cc)
+print(c3.start())
+
+#Multiple Inheritance
+
+class Person():
+
+    def __init__(self,name):
+        self.name = name
+
+    def talk(self):
+        print("Hi, I am a peron")
+
+class Student():
+
+    def __init__(self,st_id):
+        self.st_id = st_id
+
+    def study(self):
+        print("I am a student studying")
+
+class Disable(Person,Student):
+
+    def __init__(self, name,st_id,disability):
+        Person.__init__(self,name)
+        Student.__init__(self,st_id)
+        self.disability = disability
+
+    def disable(self):
+        print("I have a disability")
+
+p1 = Disable("Talha",12,"Deaf")
+print(p1.name)
+print(p1.st_id)
+print(p1.disability)
+p1.talk()
+p1.study()
+p1.disable()
+
 
 
         
