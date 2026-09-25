@@ -44,3 +44,14 @@ animals : list[Animal] = [Dog(),Cat(),Animal()]
 
 for animal in animals:
     animal.speak()
+
+#Method Overeloading
+
+class Calculator():
+
+    def add (self,a,b,c=0):
+        return a+b+c
+
+calc = Calculator()
+print(calc.add(5,10))
+print(calc.add(5,10,15))
