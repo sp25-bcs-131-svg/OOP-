@@ -22,3 +22,25 @@ num2.showNumber()
 
 num3 = num1 + num2
 num3.showNumber()
+
+#Method Overriding (Inheritance)
+
+class Animal():
+
+    def speak(self):
+        print("I can speak")
+
+class Dog(Animal):
+
+    def speak(self):
+        print("Woof!")
+
+class Cat(Animal):
+
+    def speak(self):
+        print("Meow!")
+
+animals : list[Animal] = [Dog(),Cat(),Animal()]
+
+for animal in animals:
+    animal.speak()
